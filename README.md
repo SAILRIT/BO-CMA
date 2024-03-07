@@ -1,5 +1,5 @@
 Created by: Joshua Yancosek
-# \texttt{BEACON}
+# BEACON
 This is python code for a falsification method that combines Bayesian Optimization with aspects of CMA-ES.
 Given a controller and simulation, we aim to identify environmental paramters that model uncertainty in the system that violate one or multiple specifications.
 BO-CMA is an optimization framework for falsification. BO-CMA searches subsets of the global uncertainty space. Within each subset, BO-CMA initializes a separate GP surrogate to model the objective function over this local search zone. Then, BO-CMA computes a new local search zone by looking at the covariance between the best environmental parameters simulated in the prior search zone.
